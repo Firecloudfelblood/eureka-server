@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-6-composer
+server:
+  port: 8086
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://172.17.0.3:8761/eureka}
+  instance:
+    preferIpAddress: true 
